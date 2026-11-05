@@ -1,0 +1,53 @@
+{
+  "version": "wd_v1_2025-12-29",
+  "allowlist": {
+    "P57": {
+      "name": "DIRECTED_BY",
+      "label": "director",
+      "aliases": ["directed by", "director", "helmed"],
+      "keywords": ["director", "directed", "helmed", "filmmaker"],
+      "subject_type": "FILM",
+      "object_type": "PERSON"
+    },
+    "P161": {
+      "name": "CAST_MEMBER",
+      "label": "cast member",
+      "aliases": ["cast", "starring", "starred", "actor", "actress", "played"],
+      "keywords": ["cast", "starring", "starred", "actor", "actress", "played", "featuring"],
+      "subject_type": "FILM",
+      "object_type": "PERSON"
+    },
+    "P162": {
+      "name": "PRODUCED_BY",
+      "label": "producer",
+      "aliases": ["produced", "producer"],
+      "keywords": ["producer", "produced", "produced by"],
+      "subject_type": "FILM",
+      "object_type": "PERSON"
+    },
+    "P272": {
+      "name": "PRODUCTION_COMPANY",
+      "label": "production company",
+      "aliases": ["production company", "produced by"],
+      "keywords": ["production company", "produced by", "studio"],
+      "subject_type": "FILM",
+      "object_type": "ORGANIZATION"
+    },
+    "P58": {
+      "name": "WRITTEN_BY",
+      "label": "screenwriter",
+      "aliases": ["screenwriter", "written", "wrote", "script", "screenplay"],
+      "keywords": ["screenwriter", "written", "wrote", "script", "screenplay"],
+      "subject_type": "FILM",
+      "object_type": "PERSON"
+    },
+    "P86": {
+      "name": "COMPOSED_BY",
+      "label": "composer",
+      "aliases": ["composer", "music", "score", "composed"],
+      "keywords": ["composer", "music", "score", "composed"],
+      "subject_type": "FILM",
+      "object_type": "PERSON"
+    }
+  }
+}

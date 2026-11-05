@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trident-rag-pareto"
+version = "1.0.0"
+description = "The final NeurIPS TRIDENT Pareto framework"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+dependencies = [
+  "numpy>=1.25,<2",
+  "spacy>=3.8,<4",
+  "torch>=2.0",
+  "transformers>=4.30,<5",
+]
+
+[project.optional-dependencies]
+retrieval = ["sentence-transformers>=2.2"]
+monitoring = ["psutil>=5.9"]
+serving = ["vllm>=0.2"]
+dev = ["build>=1.2", "pytest>=8"]
+
+[project.urls]
+Repository = "https://github.com/tomzhang97/trident"
+
+[tool.setuptools]
+packages = ["trident"]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+pythonpath = ["."]
+testpaths = ["tests"]

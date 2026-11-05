@@ -1,0 +1,31 @@
+__pycache__/
+*.py[cod]
+*.swp
+*.egg-info/
+.coverage
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+build/
+dist/
+
+# Local models, corpora, calibration artifacts, and run outputs
+*.bin
+*.ckpt
+*.jsonl
+*.log
+*.pkl
+*.pt
+*.safetensors
+calibrators/
+data/
+models/
+results/
+runs/
+
+# Local credentials and environment overrides
+.env
+.env.*
+!.env.example
+
